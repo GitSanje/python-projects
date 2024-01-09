@@ -57,25 +57,14 @@ def addTwoValues(arr,size):
               idxarr[i][count] = -1
 
     return valuearr,idxarr
-# arr=generateInitialMatrix(4)
-# generateRandNums(arr,3,2)
-# generateRandNums(arr,3,3)
-arr = generateMatrx(4)
-arr[0][0]=8
-arr[0][1]=0
-arr[0][2]=6
-arr[0][3]=8
+arr=generateInitialMatrix(4)
+generateRandNums(arr,3,2)
+
+# arr = generateMatrx(4)
 for i in arr:
     print(i)
-print("\n")
 newarr,idxarr= addTwoValues(arr,4)
-for i in newarr:
-    print(i)
-
 arr= addLeft(arr,newarr,idxarr, 4)
-# print("\n")
-for i in idxarr:
-    print(i)
 print("\n")
 for i in arr:
     print(i)
